@@ -1,1 +1,9 @@
-<p>companies works!</p>
+<div class="company-list">
+    @for (company of companies; track company.id) {
+        <div class="company-info">
+            <p>{{company.id}}</p>
+            <p>{{company.city}}</p>
+            <p>{{company.address}}</p>
+        </div>
+    }
+</div>
