@@ -12,4 +12,5 @@ class VacancySerializer(serializers.Serializer):
     description = serializers.CharField(allow_blank=True, required=False)
     salary = serializers.FloatField()
     company = serializers.PrimaryKeyRelatedField(queryset=Company.objects.all())
+    company_name = serializers.CharField(source='company.name', read_only=True)
     

@@ -3,5 +3,6 @@ export interface Vacancy {
     name : string,
     description?: string,
     salary : number
-    company : string
+    company_name : string
+    company : number
 }

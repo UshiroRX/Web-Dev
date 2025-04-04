@@ -1,1 +1,12 @@
-<p>vacancies works!</p>
+<div class="company-list">
+    @for (vacancy of vacancies; track vacancy.id) {
+        <div class="vacancy-info">
+            <p>{{vacancy.id}}</p>
+            <p>{{vacancy.name}}</p>
+            <p>{{vacancy.salary}}</p>
+            <p>{{vacancy.company_name}}</p>
+            
+        </div>
+    }
+    <button [routerLink] = "['..//']">Назад</button>
+</div>
